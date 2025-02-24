@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Menú</h1>
+        <h4>Restaurantes</h4>
+        <h6>Agata - Atalaya</h6>
+    </header>
+    
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+        <ul id="nav-menu" class="collapsed">
+            <li>
+                <button class="submenu-toggle" onclick="toggleSubmenu('entradas')">Categorías ▼</button>
+                <ul id="entradas" class="submenu collapsed">
+                    <li><a href="#entradas-frias" onclick="closeMenu()">Entradas Frías</a></li>
+                    <li><a href="#ensaladas" onclick="closeMenu()">Ensaladas</a></li>
+                    <li><a href="#entradas-calientes" onclick="closeMenu()">Entradas Calientes</a></li>
+                    <li><a href="#teppan" onclick="closeMenu()">Teppanyaki</a></li>
+                    <li><a href="#yakimeshi" onclick="closeMenu()">Yakimeshi</a></li>
+                    <li><a href="#arrozypasta" onclick="closeMenu()">Arroces y Pastas / Rice & Pasta</a></li>
+                    <li><a href="#toshare" onclick="closeMenu()">Para Compartir / To Share</a></li>
+                    <li><a href="#parrilla" onclick="closeMenu()">Nuestra Parrilla / Our Grill</a></li>
+                    <li><a href="#dpacifico" onclick="closeMenu()">Delicias del Pacifico / Pacific Especialtiest</a></li>
+                    <li><a href="#snacks" onclick="closeMenu()">snacks</a></li>
+                    <li><a href="#infantil" onclick="closeMenu()">Menú Infantil / Kids Menu</a></li>
+                    <li><a href="#adicionales" onclick="closeMenu()">Adicionales / Side Orders</a></li>
+                    <li><a href="#postres" onclick="closeMenu()">Postres / Desserts</a></li>
+                    <li><a href="#bebidas" onclick="closeMenu()">Bebidas / Beverages</a></li>
+                    <li><a href="#Disclaimer alérgenos y propina" onclick="closeMenu()">Disclaimer alérgenos y propina</a></li>
+                    <li><a href="#Disclaimer allergens and tip" onclick="closeMenu()">Disclaimer allergens and tip</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="entradas-frias" class="category">
+            <h2>ENTRADAS FRIAS / COLD APPETIZERS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Ceviche de Corvina / Croaker Ceviche</h3>
+                    <p>Corvina marinada en jugo de limón, leche de coco, cilantro, cebolla roja, pimentón, maíz tierno, acompañado con chips de plátano.</p>
+                    <p>Sea bass fish marinated in lemon juice, coconut milk, coriander, red onion, pepper, sweet corn, accompanied with plantain chips.</p>
+                    <span class="price">$53.900</span>
+                </div>
+                <div class="item">
+                    <h3>Ceviche de Camarón / Shrimps Ceviche</h3>
+                    <p>Camarón marinado en jugo de limón, vino blanco y salsa de soya, cebolla roja, cilantro, pimentón, salsa de tomate y aguacate, acompañado con chips de plátano.</p>
+                    <p>Shrimp marinated in lemon juice, red onion, coriander, paprika, tomato sauce and avocado, served with plantain chips.</p>
+                    <span class="price">$40.200</span>
+                </div>
+                <div class="item">
+                    <h3>Ceviche de Panceta / Pancetta Ceviche</h3>
+                    <p>Crocantes trozos de tocino barriguero marinado en jugo de limón, cebolla roja, pimentón, salsa de tomate, cilantro, montado sobre puré de papa.</p>
+                    <p>Crispy pieces of belly bacon marinated in lemon juice, red onion, pepper, coriander, avocado, sweet corn, mounted on mashed potatoes.</p>
+                    <span class="price">$40.200</span>
+                </div>
+                <div class="item">
+                    <h3>Ceviche de Mango / Mango Ceviche</h3>
+                    <p>Trozos de Mango fresco marinado en jugo de limón, cebolla roja, pimentón, cilantro, acompañado con chips de plátano.</p>
+                    <p>Pieces of mango marinated in lemon juice, red onion, coriander, accompanied with plantain chips.</p>
+                    <span class="price">$30.800</span>
+                </div>
+            </div>
+        </section>
+        <section id="ensaladas" class="category">
+            <h2>ENSALADAS / SALADS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Ensalada de Atún / Tuna Salad</h3>
+                    <p>Montada en tortilla de trigo, huevo cocido, lomos de atún, lechuga, cebolla blanca, tomate, aguacate, semillas de ajonjolí negro, aderezada con jugo de limón, sal, pimienta y aceite de oliva.</p>
+                    <p>On a wheat tortilla, boiled egg, tuna loins, lettuce, onion, tomato, avocado, black sesame seeds, seasoned with lemon juice, salt, pepper and olive oil.</p>
+                    <span class="price">$32.500</span>
+                </div>
+                <div class="item">
+                    <h3>Ensalada César Con Pollo / Chicken Cesar Salad</h3>
+                    <p>Tiras de pollo grillé montado sobre una cama de lechugas con tocineta, crotones, maíz tierno, tomate, aguacate aderezado con miel mostaza.</p>
+                    <p>Grilled chicken strips mounted on lettuce with bacon, croutons, sweet corn, tomato, avocado dressed with honey mustard sauce.</p>
+                    <span class="price">$32.500</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="entradas-calientes" class="category">
+            <h2>ENTRADAS CALIENTES / HOT APPETIZERS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Sopa del Día / Day Soup</h3>
+                    <p>•	De pescado con leche de coco, plátano verde, cebolla y cilantro.</p>
+                    <p>•	De pollo con mix de verduras, papa en trocitos y cilantro.</p>
+                    <p>•	Fish Soup: with coconut milk, green plantain, onion and coriander.</p>
+                    <p>•	Chicken Soup: with mixed vegetable, chips and coriander.</p>
+                    <span class="price">$27.000</span>
+                </div>
+                <div class="item">
+                    <h3>Crema de Jaiba y Camarón / Creamy Crab & Shrimps Soup</h3>
+                    <p>Carne de Jaiba, camarones frescos, leche de coco con guiso de hierbas de azotea y cilantro.</p>
+                    <p>Crab meat, fresh shrimp, coconut milk with fines herbes and coriander.</p>
+                    <span class="price">$29.500</span>
+                </div>
+                <div class="item">
+                    <h3>Anillos de Calamar Apanados / Panko Breaded Squid Rings</h3>
+                    <p>Anillos de calamar apanados con panko acompañados con salsa de maracuyá o de lulo.</p>
+                    <p>Panko fried Squid Rings accompanied with passion fruit or lulo fruit sauce.</p>
+                    <span class="price">$38.500</span>
+                </div>
+                <div class="item">
+                    <h3>Empanadas Criollas / Typical Corn Patties</h3>
+                    <p>Tres empanadas vallunas rellenas con carne y papa acompañadas con pique criollo.</p>
+                    <p>Three typical	Corn Patties stuffed	with	meat	and	potatoes accompanied with hot sauce.</p>
+                    <span class="price">$20.400</span>
+                </div>
+                <div class="item">
+                    <h3>Empanadas del Pacífico / Pacific Corn Patties</h3>
+                    <p>Tres	empanadas	rellenas	con	piangua,	camarón	y	jaiba acompañadas con pique criollo.</p>
+                    <p>Three Pacific Corn Patties stuffed with piangua, shrimp and crab accompanied with hot sauce.</p>
+                    <span class="price">$23.400</span>
+                </div>
+                <div class="item">
+                    <h3>Marranitas Vallunas</h3>
+                    <p>Preparación típica de Valle del Cauca; fritura hecha de plátano verde relleno de chicharrón.</p>
+                    <p>Traditional dish from Valle del Cauca; fried plantain stuffed with pork rinds</p>
+                    <span class="price">$20.400</span>
+                </div>
+                <div class="item">
+                    <h3>Aborrajados</h3>
+                    <p>Plátano maduro relleno con queso campesino y recubierto por una capa de harina y huevo.</p>
+                    <p>Sweet plantain stuffed with local cheese and coated with flour and egg.</p>
+                    <span class="price">$20.400</span>
+                </div>
+                <div class="item">
+                    <h3>Patacones Gratinados / Fried Flattened Plantain Au Gratin</h3>
+                    <p>Crocantes patacones de plátano verde cubiertos con queso mozzarella derretido.</p>
+                    <p>Crispy green plantain covered with melted mozzarella cheese.</p>
+                    <span class="price">$23.400</span>
+                </div>
+                <div class="item">
+                    <h3>Patacones con Hogao / Tostones with creole sauce</h3>
+                    <p>Crocantes patacones de plátano verde cubiertos con una salsa de tomate rojo, cebolla larga y cilantro.</p>
+                    <p>Crispy green plantain covered with a red tomato sauce, onion and coriander.</p>
+                    <span class="price">$20.400</span>
+                </div>
+                <div class="item">
+                    <h3>Chips de Plátano Verde / Thin Slices of Fried Plantain</h3>
+                    <p>Crocantes tiras de plátano verde acompañado con salsa de la casa.</p>
+                    <p>Crispy strips of plantain accompanied with homemade sauce.</p>
+                    <span class="price">$18.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="teppan" class="category">
+            <h2>TEPPANYAKI</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Langostino Teppan / Teppan Prawn</h3>
+                    <p>Combinación de arroz con jamón, huevo, zanahoria, arveja, raíz china, mix de verdura con ajonjolí, aderezada con salsa de teriyaki y langostinos al ajillo o encocado.</p>
+                    <p>Combination of rice with ham, egg, carrot, pea, Chinese root, vegetable mix with sesame seeds, dressed with teriyaki sauce and garlic or encocado prawns.</p>
+                    <span class="price">$75.000</span>
+                </div>
+                <div class="item">
+                    <h3>Pacífico Teppan (Calamares-Pollo y Lomo de Res) / Pacific Teppan (Squid, Chicken an Beef)</h3>
+                    <p>Combinación de arroz con jamón, huevo, zanahoria, arveja, raíz china con mix de verdura en salsa teriyaki y ajonjolí lomo viche, trozos de pollo y calamares a la plancha en vino tinto, salsa de soya y teriyaki.</p>
+                    <p>Combination of rice with ham, egg, carrot, pea, Chinese root with mixed vegetables in teriyaki sauce and sesame seeds, chicken and calamari pieces grilled in red wine, soy sauce and teriyaki.</p>
+                    <span class="price">$70.000</span>
+                </div>
+                <div class="item">
+                    <h3>Corvina Teppan / Teppan Croaker</h3>
+                    <p>Combinación de arroz con jamón, huevo, zanahoria, arveja, raíz china con mix de verdura en salsa teriyaki y ajonjolí, filete de corvina en vino tinto, salsa de soya y teriyaki.</p>
+                    <p>Combination of rice with ham, egg, carrot, pea, Chinese root with mixed vegetables in teriyaki sauce and sesame seeds, sea bass fillet in red wine, soy sauce and teriyaki.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Pollo Teppan / Teppan Chicken</h3>
+                    <p>Combinación de arroz con jamón, huevo, zanahoria, arveja, raíz china con mix de verdura en salsa teriyaki y ajonjolí, pechuga de pollo en tiras en vino tinto, salsa de soya y teriyaki.</p>
+                    <p>Combination of rice with ham, egg, carrot, pea, Chinese root with mixed vegetables in teriyaki sauce and sesame seeds, chicken strips in red wine, soy sauce and teriyaki.</p>
+                    <span class="price">$60.000</span>
+                </div>
+                <div class="item">
+                    <h3>Lomo Teppan / Teppan Beef tenderloin</h3>
+                    <p>Combinación de arroz con jamón, huevo, zanahoria, arveja, raíz china con mix de verdura en salsa teriyaki y ajonjolí, lomo viche en tiras en vino tinto, salsa de soya y teriyaki.</p>
+                    <p>Combination of rice with ham, egg, carrots, carrot, peas, Chinese root with mixed vegetables in teriyaki sauce and sesame seeds, Viche fillet in strips in red wine, soy sauce and teriyaki.</p>
+                    <span class="price">$65.000</span>
+                </div>                
+            </div>
+        </section>
+
+        <section id="yakimeshi" class="category">
+            <h2>YAKIMESHI</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Yakimeshi de Langostino / Prawn Yakimeshi</h3>
+                    <p>Arroz frito con langostinos, mix de verduras frescas, raíces chinas salteadas previamente con aceite de sésamo condimentado con salsa soja.</p>
+                    <p>Fried rice with prawns, mix of fresh vegetables, Chinese roots sautéed with sesame oil seasoned with soy sauce.</p>
+                    <span class="price">$75.000</span>
+                </div>
+                <div class="item">
+                    <h3>Yakimeshi Pacífico (Camarón-Calamar-Pulpo)Sea Food Yakimeshi</h3>
+                    <p>Arroz frito con camarones, calamares, y pulpo, mix de verduras frescas, raíces chinas salteadas previamente con aceite de sésamo condimentado con salsa soja.</p>
+                    <p>Fried rice with shrimp, calamari and octopus, fresh vegetable mix, Chinese roots previously sautéed with sesame oil and seasoned with soy sauce.</p>
+                    <span class="price">$75.000</span>
+                </div>
+                <div class="item">
+                    <h3>Yakimeshi (Vegetariano) / Veggie Yakimeshi</h3>
+                    <p>Arroz frito, mix de verduras frescas, raíces chinas salteadas previamente con aceite de sésamo condimentado con salsa soja.</p>
+                    <p>rice, fresh vegetable mix, Chinese roots previously sautéed with
+                        sesame oil and seasoned with soy sauce.
+                        </p>
+                    <span class="price">$45.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="arrozypasta" class="category">
+            <h2>ARROCES Y PASTAS / RICE & PASTA</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Arroz a la Marinera / Sea Food Rice</h3>
+                    <p>Arroz preparado con variedad de mariscos y salteado en leche de coco, acompañado de tostadas de plátano.</p>
+                    <p>Rice with a seafood and sautéed in coconut milk accompanied by tostones.</p>
+                    <span class="price">$75.000</span>
+                </div>
+                <div class="item">
+                    <h3>Arroz Con Camarones / Shrimps Rice</h3>
+                    <p>Arroz preparado con camarón típico de las aguas del pacífico salteado con verduras y leche coco, acompañado de chips de plátano. </p>
+                    <p>Rice with shrimp typical of Pacific waters sautéed with vegetables and coconut milk accompanied
+                        by tostones.
+                    </p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Fetuccine o Penne a la Marinera / Sea Food with Feuccine or Penne</h3>
+                    <p>Pasta penne o fetuccini con variedad de frutos del mar en salsa blanca acompañado de tostada crocante de pan y queso parmesano.</p>
+                    <p>Penne or fettuccine pasta with a variety of seafood in white sauce served with crunchy toast and parmesan cheese.</p>
+                    <span class="price">$75.000</span>
+                </div>
+                <div class="item">
+                    <h3>Fetuccine o Penne Con Pollo / Chicken Pasta</h3>
+                    <p>Pastas con trozos de pollo, cebolla vino blanco en salsa bechamel acompañado de pan tostado y queso parmesano.</p>
+                    <p>Pasta with chicken pieces, onion, white wine and béchamel sauce served with toasted bread and parmesan cheese.</p>
+                    <span class="price">$45.000</span>
+                </div>
+                <div class="item">
+                    <h3>Fetuccine o Penne Carbonara / Carbonara Pasta</h3>
+                    <p>Pastas con tocineta, cebolla, vino blanco en salsa blanca aromatizada 
+                    con nuez moscada y laurel acompañado de pan tostado y queso parmesano.
+                    </p>
+                    <p>Pasta with bacon, onion, white wine in a white sauce flavored with nutmeg and bay leaf, served with toasted bread and parmesan cheese.</p>
+                    <span class="price">$45.000</span>
+                </div>
+                <div class="item">
+                    <h3>Fetuccine o Penne a la Bolognesa / Bolognese Pasta</h3>
+                    <p>Pasta con carne molida en salsa roja napolitana aromatizada con orégano y albahaca acompañado con tostadas de pan y queso parmesano.</p>
+                    <p>Pasta with ground beef in Neapolitan red sauce flavored with oregano and basil, served with toasted bread and parmesan cheese.</p>
+                    <span class="price">$45.000</span>
+                </div>
+                <div class="item">
+                    <h3>Fetuccine o Penne Con Verduras (vegetariano) / Veggie Pasta</h3>
+                    <p>Pasta con mix de verdura frescas en salsa napolitana o salsa bechamel acompañado con queso parmesano y tostada de pan.</p>
+                    <p>Pasta with fresh vegetables in Neapolitan sauce or bechamel sauce served with parmesan cheese and toasted bread.</p>
+                    <span class="price">$45.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="toshare" class="category">
+            <h2>PARA COMPARTIR / TO SHARE</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Picada Marinera / Sea Food Bites</h3>
+                    <p>Picada de frutos del mar para compartir, filete de pescado, camarón, langostino, calamar, apanado en panco acompañado con monedas de plátano, papa francesa, tomate, limón y salsa de maracuyá o de lulo y salsa rosada.</p>
+                    <p>Chopped seafood to share, fish fillet, shrimp, prawn, squid, breaded in panko accompanied with fried plantains, French fries, tomato, lemon, passion fruit or lulo sauce and sauce.</p>
+                    <span class="price">$130.900</span>
+                </div>
+                <div class="item">
+                    <h3>Picada Atalaya / Typical Bites</h3>
+                    <p>Picada para compartir con lomo viche, fajitas de pollo, chorizo salteado a la plancha acompañado con tostadas de patacón, papa francesa, limón, tomate con salsa rosada y salsa pico de gallo picante.</p>
+                    <p>Chopped to share with beef loin, chicken strips, grilled sautéed sausage accompanied with patacón toast, French potatoes, lemon, tomato with sauce and spicy sauce.</p>
+                    <span class="price">$75.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="parrilla" class="category">
+            <h2>NUESTRA PARRILLA / OUR GRILL</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Baby Beef</h3>
+                    <p>Corte de lomo de res, acompañado de papa francesa o papa en casco y ensalada mixta con salsa chimichurri.</p>
+                    <p>Beef tenderloin, accompanied by French fries or fried potatoes and salad with chimichurri dressing.</p>
+                    <span class="price">$57.000</span>
+                </div>
+                <div class="item">
+                    <h3>Costillas de Cerdo Confitada / Candied Pork Ribs</h3>
+                    <p>Costilla de	cerdo	confitada	bañada	en	salsa de	panela acompañado de papa en casco y ensalada mixta de la casa.</p>
+                    <p>Candied pork rib covered in panela sauce accompanied by fried potatoes and homemade salad.</p>
+                    <span class="price">$57.000</span>
+                </div>
+                <div class="item">
+                    <h3>Milanesa de Pollo / Crispy Breaded Chicken</h3>
+                    <p>Jugoso Filete de pechugas pollo apanado en panco acompañado de papa francesa y ensalada mixta y salsa rosada o roja.</p>
+                    <p>Crispy breaded chicken accompanied by French fries and homemade salad and sauce.</p>
+                    <span class="price">$57.000</span>
+                </div>
+                <div class="item">
+                    <h3>Pechuga de Pollo a la Parrilla / Grilled Chicken Breast</h3>
+                    <p>Pechuga a la plancha acompañada de ensalada mixta papa francesa o papa en casco en salsa chimichurri o salsa rosada.</p>
+                    <p>Grilled chicken breast accompanied by a salad of French fries with chimichurri or sauce.</p>
+                    <span class="price">$55.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="dpacifico" class="category">
+            <h2>DELICIAS DEL PACIFICO / PACIFIC SPECIALTIEST</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Pesca del Día / Day Fish</h3>
+                    <p>Pescado entero puede ser frito, al ajillo o encocado acompañado con arroz con coco y ensalada fresca de legumbres.</p>
+                    <p>Fish can be fried, with garlic or encocado accompanied with coconut rice and fresh vegetable salad.</p>
+                    <span class="price">$86.000</span>
+                </div>
+                <div class="item">
+                    <h3>Langostinos Agata / Prawns Agata Style</h3>
+                    <p>Langostinos salteados con leche de coco y bañados con la salsa de su preferencia: apanados o encocados o al ajillo, acompañados de tostadas de plátano y arroz con coco.</p>
+                    <p>Prawns sautéed with coconut milk and covered with the sauce of your choice: crispy or fried or with garlic, served with plantain toast and coconut rice.</p>
+                    <span class="price">$85.500</span>
+                </div>
+                <div class="item">
+                    <h3>Chuleta de Cerdo a la Calima / Porky Milanese Calima Style</h3>
+                    <p>Chuleta de cerdo apanada en panco y cubierta de una deliciosa salsa de mariscos.</p>
+                    <p>Pork chop breaded in panco and covered with a delicious seafood sauce.</p>
+                    <span class="price">$73.500</span>
+                </div>
+                <div class="item">
+                    <h3>Chuleta de Pollo a la Calima / Chicken Milanese Calima Style</h3>
+                    <p>Pechuga de Pollo apanada en panco y cubierta de una deliciosa salsa de mariscos.</p>
+                    <p>Chicken Breast milanese breaded in panco and covered with a delicious seafood sauce.</p>
+                    <span class="price">$73.500</span>
+                </div>
+                <div class="item">
+                    <h3>Filete de Salmón a la Parrilla / Grilled salmon Fillet</h3>
+                    <p>Filete de salmón a la parrilla, acompañado con vegetales salteados al wok y con chips de plátano. </p>
+                    <p>Grilled salmon fillet, accompanied with wok-sautéed vegetables and plantains chips</p>
+                    <span class="price">$69.500</span>
+                </div>
+                <div class="item">
+                    <h3>Cazuela de Mariscos / Sea Food Casserole</h3>
+                    <p>Variedad de mariscos salteados con vino blanco, leche de coco, acompañado de tostadas de plátano y arroz con coco.</p>
+                    <p>Variety of seafood sautéed with white wine, coconut milk, accompanied by plantains toast and coconut rice.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Filete de Pescado a la Marinera / Sea Food Fish Fillet</h3>
+                    <p>Filete de pescado blanco a la plancha bañada con salsa marinera, acompañado de arroz con coco y chip de plátano.</p>
+                    <p>Grilled white fish covered in seafood sauce, accompanied by coconut rice and plantains chips.</p>
+                    <span class="price">$73.500</span>
+                </div>
+                <div class="item">
+                    <h3>Filete de Pescado Encocado / Sea Food Fish Fillet Paciffic Style</h3>
+                    <p>Pescado de mar guisado con leche de coco. </p>
+                    <p>Sea fish stew with coconut milk.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Sudao Triple (Camaron-Pingua-Toyo o Jaiba)</h3>
+                    <p>Combinación de mariscos guisados con las siguientes opciones para escoger tres: camarón, piangua, toyo, carne de jaiba sobre tostadas de plátano y arroz de coco.</p>
+                    <p>StewSeafood stew with a choice of three options: shrimp, piangua, toyo, crab meat on plantains toast and coconut rice.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Sudado de Toyo / Stewed Toyo</h3>
+                    <p>Toyo preparado en una deliciosa mezcla de verduras y leche de coco con el mejor sabor del pacífico.</p>
+                    <p>Toyo prepared in a mixture of vegetables and coconut milk with the best flavor of the Pacific.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Sudao de Camarón / Stewed Shrimps</h3>
+                    <p>Camarones salteados en nuestro refrito del pacífico y cocinados a fuego lento en leche de coco.</p>
+                    <p>Shrimp sautéed in our pacific fried and cooked over low heat in coconut milk.</p>
+                    <span class="price">$65.000</span>
+                </div>
+                <div class="item">
+                    <h3>Tapao de Pescado / Local-style steamed whole fish</h3>
+                    <p>Pescado entero cocido al vapor en su jugo con plátano y cebolla acompañado de arroz con coco.</p>
+                    <p>Fish steamed with plantains and onion accompanied by coconut rice.</p>
+                    <span class="price">$65.000</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="snacks" class="category">
+            <h2>SNACKS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Hamburguesa de la casa / Home made Hamburguer</h3>
+                    <p>100% de res en pan especial, lechuga, tomate, tocineta, queso mozzarella y aros de cebolla fritos, acompañada con papas a la francesa.</p>
+                    <p>100% beef on special bread, lettuce, tomato, bacon, mozzarella cheese and fried onion rings, served with french fries.</p>
+                    <span class="price">$38.500</span>
+                </div>
+                <div class="item">
+                    <h3>Club Sandwich</h3>
+                    <p>El tradicional, Pan Pullman, pechuga de pollo, tocineta, jamón, queso, huevo frito, lechuga y tomate.</p>
+                    <p>Traditional Pullman bread, Chicken Breast, bacon, ham, cheese, fried egg, lettuce and tomato.</p>
+                    <span class="price">$38.500</span>
+                </div>
+                <div class="item">
+                    <h3>Sandwich Combinado de Jamón con Queso / Ham and Cheese Sandwich.</h3>
+                    <p>Pan Pullman cortado en triángulo, acompañado de jamón, queso, aderezado con mantequilla y servido con papas a la francesa.</p>
+                    <p>Pullman bread with ham, cheese, dressed with butter and served with french fries.</p>
+                    <span class="price">$32.000</span>
+                </div>
+                <div class="item">
+                    <h3>Wrap de Pollo / Chicfien Wrap</h3>
+                    <p>Tortilla de trigo rellena con pollo, lechuga, tomate, queso crema, queso mozarella, acompañado de papas a la francesa en salsa chimichurri o salsa rosada.</p>
+                    <p>Wheat tortilla stuffed with chicken, lettuce, tomato, cream cheese, mozzarella cheese, served with french fries.</p>
+                    <span class="price">$38.500</span>
+                </div>
+                <div class="item">
+                    <h3>Wrap de Atún / Tuna Fish Wrap</h3>
+                    <p>Tortilla de trigo rellena con lomos de atún, lechuga, tomate queso crema, queso mozzarella, acompañado de papas a la francesa.</p>
+                    <p>Wheat tortilla stuffed with tuna loins, lettuce, tomato, cream
+                    cheese, mozzarella cheese, served with french fries.</p>
+                    <span class="price">$38.500</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="infantil" class="category">
+            <h2>MENÚ INFANTIL / KIDS MENU</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>Salchipapa / French fries and sausage</h3>
+                    <p>Combinación de papitas fritas y salchicha con aderezos de la casa.</p>
+                    <p>French fries and sausage with house dressings.</p>
+                    <span class="price">$28.000</span>
+                </div>
+                <div class="item">
+                    <h3>Nuggets de Pollo / Chicken Nuggets</h3>
+                    <p>Trocitos de pollo apanado servidos con papas a la francesa.</p>
+                    <p>Breaded chicken pieces served with French fries.</p>
+                    <span class="price">$28.000</span>
+                </div>
+
+ 
+            </div>
+        </section>
+
+        <section id="adicionales" class="category">
+            <h2>ADICIONALES / SIDE ORDERS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <p>•	Arroz Blanco / White Rice</p>
+                    <span class="price">$8.000</span>
+                    <p>•	Arroz con Coco / Coconut Rice</p>
+                    <span class="price">$9.500</span>
+                    <p>•	Papas a la Francesa / French Fries</p>
+                    <span class="price">$9.500</span>
+                    <p>•	Porción de Patacón (3 Unds.) / Fried Plantain</p>
+                    <span class="price">$9.500</span>
+                    <p>•	Porción de Ensalada Mixta / Mixed Fresh Salad</p>
+                    <span class="price">$8.500</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="postres" class="category">
+            <h2>POSTRES / DESSERTS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <p>•	Trio de Cocadas de la Región</p>
+                    <span class="price">$15.500</span>
+                    <p>•	Brownie con Helado</p>
+                    <span class="price">$15.500</span>
+                    <p>•	Copa de Helado Con Chocolate</p>
+                    <span class="price">$15.500</span>
+                    <p>•	Flan de Coco</p>
+                    <span class="price">$15.500</span>
+                    <p>•	Torta de Zanahoria con Chantilly</p>
+                    <span class="price">$15.500</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="category">
+            <h2>BEBIDAS / BEVERAGES</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>LIMONADAS</h3>
+                    <p>•	Limonada Cerezada / Cherry Lemonade</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Limonada de Coco / Coconut Lemonade</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Limonada Hierbabuena / Mint Lemonade</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Limonada de Mango Viche / Mango Lemonade</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Limonada Natural / Lemonade</p>
+                    <span class="price">$10.000</span>
+                </div>
+                <div class="item">
+                    <h3>SODAS ITALIANAS</h3>
+                    <p>•	Frutos Rojos / Berries Italian Soda</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Lychee / Lychhe Italian Soda</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Frutas Tropicales / Tropical Fruit Soda</p>
+                    <span class="price">$15.000</span>
+                </div>
+                <div class="item">
+                    <h3>BEBIDAS CALIENTES / HOT DRINKS</h3>
+                    <p>•	Expreso</p>
+                    <span class="price">$7.000</span>
+                    <p>•	Americano</p>
+                    <span class="price">$7.000</span>
+                    <p>•	Moka</p>
+                    <span class="price">$8.500</span>
+                    <p>•	Latte</p>
+                    <span class="price">$8.500</span>
+                    <p>•	Machiatto</p>
+                    <span class="price">$8.500</span>
+                    <p>•	Cappuccino Tradicional</p>
+                    <span class="price">$9.000</span>
+                    <p>•	Té- Aromáticas</p>
+                    <span class="price">$7.500</span>
+                </div>
+                <div class="item">
+                    <h3>MALTEADAS / MILK SHAKES</h3>
+                    <p>•	Vainilla / Vanilla</p>
+                    <span class="price">$16.000</span>
+                    <p>•	Fresa / Strawberry</p>
+                    <span class="price">$16.000</span>
+                </div>
+                <div class="item">
+                    <h3>BEBIDAS SUAVES / SOFT DRINKS</h3>
+                    <p>•	Gaseosa / Soda</p>
+                    <span class="price">$7.000</span>
+                    <p>•	Agua / Bottle Water</p>
+                    <span class="price">$7.000</span>
+                    <p>•	Frapuchino / Frapuccino</p>
+                    <span class="price">$14.500</span>
+                    <p>•	Frapuchino con Amaretto / Frapuccino with Amaretto</p>
+                    <span class="price">$19.500</span>
+                    <p>•	Frapuchino con Baileys / Frapuccino with Baileys</p>
+                    <span class="price">$22.500</span>
+                    <p>•	Jugos Naturales en Agua / Natural Juice in Water</p>
+                    <span class="price">$9.500</span>
+                    <p>•	Jugos Naturales en Leche Natural / Juice in Milk</p>
+                    <span class="price">$11.000</span>
+                </div>
+                <div class="item">
+                    <h3>CERVEZAS NACIONALES / NATIONAL BEERS</h3>
+                    <p>•	Aguila Light</p>
+                    <span class="price">$12.000</span>
+                    <p>•	Aguila Original</p>
+                    <span class="price">$12.000</span>
+                    <p>•	Poker</p>
+                    <span class="price">$12.000</span>
+                    <p>•	Club Colombia Dorada</p>
+                    <span class="price">$12.000</span>
+                    <p>•	Michelada</p>
+                    <span class="price">+ $3.000</span>
+                </div>
+                <div class="item">
+                    <h3>CERVEZAS IMPORTADAS / IMPORTED BEERS</h3>
+                    <p>•	Corona</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Budweiser</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Heineken</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Stella Artois</p>
+                    <span class="price">$15.000</span>
+                    <p>•	Michelada</p>
+                    <span class="price">+ $3.000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="Disclaimer alérgenos y propina" class="category">
+            <h2>DISCLAIMER, ALÉRGENOS Y PROPINAS</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>•	ALÉRGENOS:</h3>
+                    <p>apreciado huésped, si usted tiene alguna restricción o alergia alimentaria, por favor indíquele al mesero o al agente de servicios a huéspedes y haremos lo posible por atender su solicitud.</p>
+                    <h3>•	PROPINAS:</h3>
+                    <p>se informa a los consumidores que este establecimiento de comercio sugiere a sus consumidores una propina correspondiente al 10% del valor de la cuenta, el cual podrá ser aceptado, rechazado o modifficado por usted, de acuerdo con su valoración del servicio prestado. Al momento de solicitar la cuenta, indíquele a la persona que lo atiende si quiere que dicho valor sea o no incluido en la factura, o indíquele el valor que quiere dar como propina. En este establecimiento los dineros recogidos por concepto de propina se destinan en un 100 % a todo el personal del área de servicio y preparación de alimentos de la empresa. En caso de que tenga algún inconveniente con el cobro de la propina, comuníquese con la línea de atención de la Superintendencia de Industria y Comercio para que radique su queja, a los teléfonos Bogotá (601) 6513240, y para el resto del país línea gratuita nacional 018000-910165.</p>
+                    <p>“Prohíbase el expendio de bebidas embriagantes a menores de edad” - Ley 124 de 1994.</p>
+                    <h3>•	Impuestos:</h3>
+                    <p>los precios incluyen impuestos y están expresados en pesos colombianos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Disclaimer allergens and tip" class="category">
+            <h2>DISCLAIMER, ALLERGENS AND TIP</h2>
+            <div class="menu-grid">
+                <div class="item">
+                    <h3>•	ALLERGENS:</h3>
+                    <p>dear guest, if you have any food restrictions or allergies, please inform to the waiter or the Guest Services Agent and we will do everything possible to attend to your request.</p>
+                    <h3>•	TIPS: </h3>
+                    <p>we inform all guests that this restaurant suggests a tip of 10% of the total checfi value, which can be accepted, rejected, or changed by you, according to your opinion of the service provided. Upon requesting the checfi, please inform your waiter which percentage will be included, or indicate the amount you wish to be include as a tip. In this establishment, all the amounts received as tips are fully assigned to all the service area and cuisine personnel. If you have any problem with the tip, please call the Superintendence of Industry and Trade helpline to mafie your claim, in the following telephone numbers - Bogotá (601) 651-3240, for the rest of the country 018000-910165, toll- free.</p>
+                    <p>"Selling alcoholic beverages to minors is prohibited"- Law 124 of 1994.</p>
+                    <h3>•	TAXES:</h3>
+                    <p>prices includes taxes and are in Colombian Pesos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+        function toggleSubmenu(id) {
+            document.getElementById(id).classList.toggle("active");
+        }
+        function closeMenu() {
+            document.getElementById("nav-menu").classList.remove("active");
+        }
+    </script>
+</body>
+</html>
