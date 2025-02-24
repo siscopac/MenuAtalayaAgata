@@ -2,7 +2,7 @@ body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: url('img/MosaicoMariscos.jpg') no-repeat center center fixed;
+    background: url('MosaicoMariscos.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #155c7d;
     text-align: center;
